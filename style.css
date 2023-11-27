@@ -1,0 +1,238 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.navbar {
+     background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    color: #4b0082; /* Dark purple color for text */
+    padding: 10px 0 4px 0; /* Padding adjusted for slight gap at the bottom */
+    position: fixed;
+    top: 4px;
+    left: 5px;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #4b0082; /* Dark purple color */
+    font-size: 1.5em;
+    margin: 0 0px;
+    display: inline-block; /* Ensures inline layout with nav items */
+}
+
+.nav-toggle {
+    display: none; /* Hide the checkbox */
+}
+.nav-toggle-label {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 20px;
+    right: 50px; /* Adjusted from the right of the screen */
+    cursor: pointer;
+    z-index: 1001; /* Above the navbar content */
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    width: 30px; /* Width of burger menu lines */
+    height: 3px; /* Height of burger menu lines */
+    background: #4b0082; /* Dark purple color */
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle-label span::before {
+    content: "";
+    top: -10px; /* Position above the middle line */
+}
+
+.nav-toggle-label span::after {
+    content: "";
+    top: 10px; /* Position below the middle line */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centered navigation items */
+    display: flex; /* Use flex layout for horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px; /* Increased spacing around menu items */
+}
+
+nav ul li a {
+    color: #4b0082; /* Dark purple color */
+    text-decoration: none;
+    font-size: 1.5em; /* Larger font size for better visibility */
+}
+
+
+nav ul li a:hover {
+    color: #519495; /* Lighter purple on hover */
+}
+
+.hero {
+    background: url('Images/helpdesk.webp') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(75, 75, 75, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* Ensures the text is above the overlay */
+}
+
+.hero h2 {
+    font-size: 3em; 
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.5em; 
+    max-width: 800px;
+    margin: auto;
+}
+
+.content {
+    margin: 40px 0;
+}
+
+article {
+    margin-bottom: 30px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.article-left, .article-right {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.article-left img, .article-right img {
+    width: 300px; /* Uniform image size */
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.article-left .text-content, .article-right .text-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-right {
+    flex-direction: row-reverse;
+}
+
+.text-content h3 {
+    color: #6f00ff;
+    margin-top: 0;
+}
+
+.text-content a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #6f00ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .article-left, .article-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-right img {
+        order: -1; /* Image above the text */
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+     .nav-toggle-label {
+        display: block;
+    }
+.navbar {
+    height: 50px;
+}
+    .nav-toggle:checked + nav ul {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed; /* Use fixed positioning */
+        right: 0; /* Aligned to the right of the screen */
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        text-align: center;
+        flex-direction: column;
+        border-radius: 0 0 5px 5px; /* Rounded corners at the bottom */
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Shadow on the left side */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .nav-toggle:checked + nav ul {
+        display: block;
+    }
+}
