@@ -56,7 +56,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--link-color);
-    font-size: 1em;
+    font-size: 1.4em;
 }
 
 nav ul li a:hover {
@@ -88,6 +88,8 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 3em;
     margin-bottom: 0.5em;
+    
+
 }
 
 .hero p {
@@ -118,26 +120,78 @@ article img {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
+.article-left .image-side, .article-right .image-side {
+    width: 60%;
+    position: relative;
+}
+
+/* Custom shapes for images */
 .article-left img, .article-right img {
-    width: 300px;
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s ease;
+    border-radius: 90%;
+    
 }
 
-.article-left .text-content, .article-right .text-content {
-    flex-grow: 1;
+/* Overlay with the same shape as images */
+.article-left .overlay, .article-right .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(74, 57, 57, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 80%; /* Inherits the shape from the image */
+}
+
+/* Text side adaptation */
+.article-left .text-side, .article-right .text-side {
+    width: 90%;
     padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    align-self: stretch; /* To make the text block adapt in height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: skewX(-20deg);
+}
+
+/* Hover effects */
+.article-left:hover img::after, .article-right:hover img::after,
+.article-left:hover .overlay, .article-right:hover .overlay,
+.article-left:hover .text-side, .article-right:hover .text-side {
+    opacity: 1;
 }
 
 .article-right {
     flex-direction: row-reverse;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .article-left, .article-right {
+        flex-direction: column;
+    }
+    .article-left .image-side, .article-right .image-side, 
+    .article-left .text-side, .article-right .text-side {
+        width: 100%;
+    }
+    .article-right {
+        flex-direction: column-reverse;
+    }
 }
 
 .text-content h3 {
@@ -219,5 +273,18 @@ footer {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+     .article-left, .article-right {
+        flex-direction: column;
+    }
+    .article-left .image-side, .article-right .image-side, 
+    .article-left .text-side, .article-right .text-side {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        transform: skewX(0deg);
+    }
+    .article-right {
+        flex-direction: column-reverse;
     }
 }
