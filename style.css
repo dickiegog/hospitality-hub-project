@@ -1,124 +1,97 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 4px;
-    box-sizing: border-box;
+:root {
+    --primary-color: #00a2cbfc;
+    --secondary-color: #52c1ddfc;
+    --font-family: 'Montserrat', sans-serif;
+    --background-color: #eaf1f6;
+    --text-color: #606566fc;
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--secondary-color);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
+
 .navbar {
-     background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
-    color: #4b0082; /* Dark purple color for text */
-    padding: 10px 0 4px 0; /* Padding adjusted for slight gap at the bottom */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--link-color);
+    padding: 10px 20px;
     position: fixed;
-    top: 4px;
-    left: 5px;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    color: #4b0082; /* Dark purple color */
-    font-size: 1.5em;
-    margin: 0 0px;
-    display: inline-block; /* Ensures inline layout with nav items */
+    color: var(--link-color);
+    font-size: 2em;
+    margin: 0;
 }
 
-.nav-toggle {
-    display: none; /* Hide the checkbox */
-}
-.nav-toggle-label {
-    display: none; /* Initially hidden */
-    position: absolute;
-    top: 20px;
-    right: 50px; /* Adjusted from the right of the screen */
-    cursor: pointer;
-    z-index: 1001; /* Above the navbar content */
+nav {
+    text-align: right;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    display: block;
-    width: 30px; /* Width of burger menu lines */
-    height: 3px; /* Height of burger menu lines */
-    background: #4b0082; /* Dark purple color */
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav-toggle-label span::before {
-    content: "";
-    top: -10px; /* Position above the middle line */
-}
-
-.nav-toggle-label span::after {
-    content: "";
-    top: 10px; /* Position below the middle line */
-}
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center; /* Centered navigation items */
-    display: flex; /* Use flex layout for horizontal alignment */
-    align-items: center; /* Vertical alignment */
-    justify-content: center; /* Horizontal alignment */
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 25px; /* Increased spacing around menu items */
+    margin-left: 30px;
 }
 
 nav ul li a {
-    color: #4b0082; /* Dark purple color */
     text-decoration: none;
-    font-size: 1.5em; /* Larger font size for better visibility */
+    color: var(--link-color);
+    font-size: 1em;
 }
 
-
 nav ul li a:hover {
-    color: #519495; /* Lighter purple on hover */
+    color: var(--link-hover-color);
 }
 
 .hero {
-    background: url('Images/helpdesk.webp') no-repeat center center;
-    background-size: cover;
-    position: relative;
+    background: url('Images/helpdesk.webp') no-repeat center center/cover;
     color: white;
-    margin-top: 100px;
+    padding: 80px 0;
     text-align: center;
-    padding: 100px 0;
+    position: relative;
+    margin-top: 60px;
 }
 
 .hero::before {
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(75, 75, 75, 0.5); /* Semi-transparent black overlay */
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
 .hero .container {
     position: relative;
-    z-index: 2; /* Ensures the text is above the overlay */
+    z-index: 2;
 }
 
 .hero h2 {
-    font-size: 3em; 
+    font-size: 3em;
     margin-bottom: 0.5em;
 }
 
 .hero p {
-    font-size: 1.5em; 
+    font-size: 1.5em;
     max-width: 800px;
     margin: auto;
 }
@@ -148,7 +121,7 @@ article img {
 }
 
 .article-left img, .article-right img {
-    width: 300px; /* Uniform image size */
+    width: 300px;
     height: auto;
     margin: 10px;
     border-radius: 10px;
@@ -168,14 +141,14 @@ article img {
 }
 
 .text-content h3 {
-    color: #6f00ff;
+    color: #00a2cbfc;
     margin-top: 0;
 }
 
 .text-content a {
     display: inline-block;
     margin-top: 15px;
-    color: #6f00ff;
+    color: #00a2cbfc;
     text-decoration: none;
     font-weight: bold;
 }
@@ -184,19 +157,6 @@ article img {
     text-decoration: underline;
 }
 
-/* Responsive adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-    .article-left, .article-right {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .article-right img {
-        order: -1; /* Image above the text */
-    }
-}
-
-
 footer {
     background-color: #333;
     color: white;
@@ -204,35 +164,60 @@ footer {
     padding: 20px 0;
 }
 
+.nav-toggle {
+    display: none;
+}
+.nav-toggle-label {
+    display: none;
+    position: absolute;
+    top: 10px; /* Adjusted to 10px margin from the top */
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001; /* Above the navbar */
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--link-color);
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle-label span::before { top: -8px; }
+.nav-toggle-label span::after { top: 8px; }
 @media screen and (max-width: 768px) {
-     .nav-toggle-label {
+    .nav-toggle-label {
         display: block;
     }
-.navbar {
-    height: 50px;
-}
-    .nav-toggle:checked + nav ul {
+
+    .nav-toggle-label:hover + nav ul,
+    nav ul:hover {
         display: block;
     }
 
     nav ul {
         display: none;
-        position: fixed; /* Use fixed positioning */
-        right: 0; /* Aligned to the right of the screen */
+        position: absolute;
+        right: 0;
+        top: 60px; /* Adjusted to appear below the burger menu */
         background-color: rgba(255, 255, 255, 0.9);
-        padding: 15px;
+        width: 100%;
         text-align: center;
-        flex-direction: column;
-        border-radius: 0 0 5px 5px; /* Rounded corners at the bottom */
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Shadow on the left side */
+        padding-top: 10px; /* Added padding for better spacing */
     }
 
     nav ul li {
         display: block;
         margin: 10px 0;
-    }
-
-    .nav-toggle:checked + nav ul {
-        display: block;
     }
 }

@@ -8,40 +8,55 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Hospitality Help Hub</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="managers.html">Managers</a></li>
-                    <li><a href="staff.html">Staff</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="navbar">
+        <h1>Hospitality Help Hub</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="owners.html">Owners</a></li>
+                <li><a href="managers.html">Managers</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
     <main>
-        <section class="hero">
+        <section class="hero" style="background-image: url('Images/helpdesk.webp');">
             <div class="container">
                 <h2>Welcome, Business Owners</h2>
-                <p>Explore resources and advice tailored to help you succeed in the hospitality industry.</p>
+                <p>Explore a wealth of resources and advice tailored to help you succeed in the hospitality industry.</p>
             </div>
         </section>
         <section class="content">
             <div class="container">
-                <article>
-                    <h3>Managing Your Business</h3>
-                    <img src="business-management.jpg" alt="Business Management">
-                    <p>Detailed guide on efficient business management, customer relations, and more...</p>
+                <article class="article-left">
+                    <img src="Images/Strategy-Chess.png" alt="Business Strategy">
+                    <div class="text-content">
+                        <h3>Strategic Planning and Adaptation</h3>
+                        <p>In the dynamic field of hospitality, strategic planning and adaptation are crucial. Explore ways to align your business strategy with market trends, innovate service offerings, and make data-driven decisions for sustainable growth. Connect with industry experts for insights.</p>
+                        <a href="strategy-resources.html">Strategic Resources</a>
+                    </div>
                 </article>
-                <article>
-                    <h3>Marketing Strategies</h3>
-                    <img src="marketing-strategies.jpg" alt="Marketing Strategies">
-                    <p>Learn about the latest marketing trends and how to apply them to your business...</p>
+                <article class="article-right">
+                    <img src="Images/Restaurant-Management-Skills.png" alt="Marketing Trends">
+                    <div class="text-content">
+                        <h3>Embracing New Marketing Trends</h3>
+                        <p>Understanding and implementing the latest marketing trends can set your business apart. Dive into digital marketing techniques, social media engagement strategies, and customer relationship management to enhance your brand's visibility and customer loyalty.</p>
+                        <a href="marketing-insights.html">Marketing Insights</a>
+                    </div>
                 </article>
-                <article>
-                    <h3>Staff Management</h3>
-                    <img src="staff-management.jpg" alt="Staff Management">
-                    <p>Tips on maintaining a happy and productive workforce...</p>
+                <article class="article-left">
+                    <img src="Images/staff training.jpg" alt="Staff Management">
+                    <div class="text-content">
+                        <h3>Effective Staff Management</h3>
+                        <p>The success of your business greatly depends on your staff. Learn about effective staff training programs, motivational strategies, and ways to foster a positive work environment that ensures high productivity and job satisfaction.</p>
+                        <a href="staff-management-tips.html">Staff Management Tips</a>
+                    </div>
                 </article>
             </div>
         </section>

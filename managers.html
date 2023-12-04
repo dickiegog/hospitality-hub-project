@@ -4,25 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospitality Help for Managers</title>
+    <link rel="stylesheet" href="style.css"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitality Help for Managers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hospitality Help for Managers</h1>
+   <header>
+    <div class="navbar">
+        <h1>Hospitality Help Hub</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="owners.html">Owners</a></li>
+                <li><a href="managers.html">Managers</a></li>
                 <li><a href="staff.html">Staff</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
+
     <main>
-        <section>
-            <h2>Guidance for Hospitality Managers</h2>
-            <p>Useful information and tips for managing hospitality staff and operations...</p>
-            <!-- Additional content and links go here -->
+        <section class="hero" style="background-image: url('Images/manager-hero.jpg');">
+            <div class="container">
+                <h2>Welcome, Hospitality Managers</h2>
+                <p>Discover key strategies and insights to enhance your management skills and improve your establishment's performance.</p>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <article class="article-left">
+                    <img src="Images/team-building image" alt="Team Building">
+                    <div class="text-content">
+                        <h3>Building and Leading Effective Teams</h3>
+                        <p>Learn the art of team building and leadership in the hospitality industry. Explore methods to motivate your team, foster a collaborative environment, and manage diverse groups effectively for optimal performance.</p>
+                        <a href="team-building.html">Team Building Techniques</a>
+                    </div>
+                </article>
+                <article class="article-right">
+                    <img src="Images/customer image" alt="Customer Service Excellence">
+                    <div class="text-content">
+                        <h3>Enhancing Customer Service</h3>
+                        <p>Customer service excellence is key to success. Gain insights into delivering outstanding customer experiences, handling customer feedback constructively, and implementing service improvements that make a difference.</p>
+                        <a href="customer-service.html">Customer Service Tips</a>
+                    </div>
+                </article>
+                <article class="article-left">
+                    <img src="Images/operationa image" alt="Operational Efficiency">
+                    <div class="text-content">
+                        <h3>Optimizing Operational Efficiency</h3>
+                        <p>Maximize the efficiency of your operations with these best practices. From streamlining processes to utilizing technology effectively, discover ways to increase productivity while maintaining high-quality standards.</p>
+                        <a href="operational-tips.html">Operational Efficiency Tips</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Hospitality Help Hub. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
+</head>
+
