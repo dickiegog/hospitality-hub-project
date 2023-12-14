@@ -61,8 +61,8 @@ The Staff Page is an interactive platform for front-line employees. It provides 
 External code sources are attributed in comments above the respective code sections in the source files.
 
 ## Code Organization
-- Code specific to the website is contained within the `src` directory.
-- External libraries and frameworks are listed in the `package.json` file under dependencies.
+index.html = home
+"user type".html = "user type" page
 
 ## Coding Standards
 The codebase adheres to the following standards:
@@ -74,18 +74,13 @@ The codebase adheres to the following standards:
 Files are named descriptively, using lowercase and underscores to ensure cross-platform compatibility, e.g., `team_building.js`.
 
 ## Directory Structure
-- `assets/`: Contains all static files.
-  - `css/`: CSS files.
-  - `images/`: Image files.
-- `src/`: Source code for the application.
-- `lib/`: External libraries.
-
+- `style.css`: CSS file.
+- `images/`: Image files.
+- '.devcontainer/': build assets & docker files, 
 ## License
-[Include license information here]
+MIT License
 
 ## Contact
-For any inquiries or contributions, please contact [Your Contact Information].
+For any inquiries or contributions, please contact richardgoggin@gmail.com.
 
 ---
-
-This README provides a comprehensive guide for users and developers of the Hospitality Help Hub. Replace the placeholders (like `/path/to/team_building_screenshot.jpg`) with actual paths to your resources, and ensure all information is accurate and up-to-date.
