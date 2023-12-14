@@ -42,19 +42,17 @@ To deploy the Hospitality Help Hub, follow these steps:
 Below are the key features with their descriptions and screenshots:
 
 ### home 
-![Home Page](Images/Screenshot 2023-12-14 at 22.24.22.png)
+![Home Page](Images/Home-Screen.png)
 The Home Page serves as the welcoming gateway to the Hospitality Help Hub. It offers a user-friendly interface to navigate to various modules of the application. This page highlights the core features and provides quick access to team-building tools, operational dashboards, and other resources.
 
-
-
 ### Owner Page
-![Owners Page](/Images/Screenshot 2023-12-14 at 22.24.36.png)
+![Owners Page](Images/owners-screen.png)
 The Owner's Page is a specialized dashboard designed for business owners in the hospitality industry. This page focuses on providing high-level insights into business operations, enabling owners to make informed decisions. Features include financial oversight, staff performance tracking, and strategic planning tools.
 ### Managers Page
-![Managers Page](Images/Screenshot 2023-12-14 at 22.24.43.png)
+![Managers Page](Images/maangers-screen.png)
 The Manager's Page is tailored for those overseeing daily operations within the hospitality sector. This comprehensive dashboard offers tools for staff management, resource allocation, and operational efficiency tracking. It's designed to streamline managerial tasks and enhance overall operational flow.
 ### Staff Page
-![Staff Page](/Images/Screenshot 2023-12-14 at 22.24.50.png)
+![Staff Page](Images/staff-screen.png)
 The Staff Page is an interactive platform for front-line employees. It provides access to schedules, task lists, and communication tools. This page is essential for ensuring that staff members are well-informed and equipped to deliver exceptional service to customers.
 ## Attributions
 - Team Building content and images are attributed to [Reality HR](https://www.realityhr.co.uk/five-benefits-of-team-building-exercises-and-some-pitfalls-to-watch-out-for/).
