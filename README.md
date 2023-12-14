@@ -71,7 +71,7 @@ The codebase adheres to the following standards:
 - Readable and descriptive variable and function names.
 
 ## File Naming Conventions
-Files are named descriptively, using lowercase and underscores to ensure cross-platform compatibility, e.g., `team_building.js`.
+Files are named descriptively, using lowercase and underscores to ensure cross-platform compatibility, e.g., `staff.html`.
 
 ## Directory Structure
 - `style.css`: CSS file.
