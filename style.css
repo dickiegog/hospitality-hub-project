@@ -352,7 +352,7 @@ footer {
 .nav-toggle-label span::before { top: -8px; }
 .nav-toggle-label span::after { top: 8px; }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 1200px) {
      .nav-toggle-label {
         display: block;
     }
