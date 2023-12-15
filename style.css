@@ -244,10 +244,11 @@ article img {
      text-decoration: none;
     vertical-align: middle;
 }
-.popup-content a:hover {
+.popup-content a:hover, .popup-button:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
-.popup-checkbox:checked + .popup-button + .popup-container {
+.popup-checkbox:checked ~ .popup-container {
     display: block;
 }
 
@@ -325,10 +326,10 @@ footer {
 .nav-toggle-label {
     display: none;
     position: absolute;
-    top: 10px; /* Adjusted to 10px margin from the top */
+    top: 10px; 
     right: 20px;
     cursor: pointer;
-    z-index: 1001; /* Above the navbar */
+    z-index: 1001; 
 }
 .nav-toggle-label span,
 .nav-toggle-label span::before,
