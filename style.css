@@ -1,28 +1,18 @@
-:root {
-    --main-color: #00a3cc;
-    --accent-color: #53c2de;
-    --highlight-color: #d60db6;
-    --base-font: "Arial", sans-serif;
-    --backdrop-color: #e9f0f5;
-    --text-hue: #616667;
-    --hyperlink-color: var(--main-color);
-    --hover-color: var(--accent-color);
-}
 
 body {
-    font-family: var(--base-font);
+    font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--backdrop-color);
-    color: var(--text-hue);
+    background-color: #e9f0f5;
+    color: #616667;
     max-width: 1600px;
     align-items: center;
 }
 
 .navbar {
     background-color: rgba(255, 255, 255, 0.85);
-    color: var(--hyperlink-color);
+    color: #00a3cc;
     padding: 12px 22px;
     position: fixed;
     top: 0;
@@ -35,7 +25,7 @@ body {
 }
 
 header h1 {
-    color: var(--hyperlink-color);
+    color: #00a3cc;
     font-size: 2.2em;
     margin: 0;
 }
@@ -58,14 +48,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--hyperlink-color);
+    color: #00a3cc;
     font-size: 1.4em;
 }
 
 nav ul li a:hover {
-    color: var(--hover-color);
+    color: #d60db6;
     text-decoration: underline;
-    color: #cb01ba;
 }
 
 .hero {
@@ -266,9 +255,10 @@ article img {
 }
 .subscribe-head {
     margin: 20px 0 20px 0;
+
 }
 .sub-button {
- background-color: var(--alt-color);
+ background-color: #d60db6;
  color: #fff;
  height: 1.9em;
  width: 30%;
@@ -351,7 +341,7 @@ footer {
     display: block;
     width: 25px;
     height: 3px;
-    background: var(--link-color);
+    background: #00a3cc;
     transition: all 0.3s ease-in-out;
     margin-top: 10px;
 }
@@ -442,6 +432,10 @@ footer {
         padding-top: 10px;
         height: 150px;
         font-size: small;
+    }
+    .hero h2 {
+        font-size: xx-large;
+        padding: 5px;
     }
     
     .article-left .text-side, .article-right .text-side {
