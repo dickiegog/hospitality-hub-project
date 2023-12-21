@@ -34,16 +34,17 @@ Hospitality Help Hub includes several key features, each designed to address spe
 ## Deployment
 <!-- From Course notes -->
 To deploy the Hospitality Help Hub, follow these steps:
-1. Go to the Settings tab of your GitHub repo.
-2. On the left-hand sidebar, in the Code and automation section, select Pages.
-3. Make sure:
+1. Clone repo to your own Github account.
+2. Go to the Settings tab of your GitHub repo.
+3. On the left-hand sidebar, in the Code and automation section, select Pages.
+4. Make sure:
     - Source is set to 'Deploy from Branch'.
     - Main branch is selected.
     - Folder is set to / (root).
-4. Under Branch, click Save.
-5. Go back to the Code tab. Wait a few minutes for the build to finish and refresh your repo.
-6. On the right-hand side, in the Environments section, click on 'github-pages'.
-7. Click View deployment to see the live site. The URL will look similar to YOUR-USERNAME.github.io/lhospitality-hub-project.
+5. Under Branch, click Save.
+6. Go back to the Code tab. Wait a few minutes for the build to finish and refresh your repo.
+7. On the right-hand side, in the Environments section, click on 'github-pages'.
+8. Click View deployment to see the live site. The URL will look similar to YOUR-USERNAME.github.io/lhospitality-hub-project.
 
 ## Usage and Screenshots
 Below are the key features with their descriptions and screenshots:
