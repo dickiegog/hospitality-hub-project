@@ -1,13 +1,14 @@
 
 body {
     font-family: "Arial", sans-serif;
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
     background-color: #e9f0f5;
     color: #616667;
     max-width: 1600px;
     align-items: center;
+    justify-content: center;
 }
 
 .navbar {
