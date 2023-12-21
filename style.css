@@ -429,11 +429,13 @@ footer {
     }
 .article-left .overlay, .article-right .overlay {
     font-size: 1em;
-    height: 90%;
+    height: 92%;
     opacity: 1;
 }
 }
-
+@media screen and (max-width: 1024px){.article-left .overlay, .article-right .overlay {
+    height: 91%;
+}}
 @media screen and (max-width: 768px) {
     .nav-toggle-label {
         display: block;
