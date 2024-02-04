@@ -158,7 +158,6 @@ article img {
 	font-size: 2.1em;
 	align-items: center;
 	justify-content: center;
-	opacity: 0;
 	z-index: 2;
 	transition: opacity 0.5s ease;
 	border-radius: 85%;
@@ -170,7 +169,6 @@ article img {
 	width: 67%;
 	padding: 22px;
 	background-color: #fff;
-	opacity: 0;
 	transition: opacity 0.5s ease;
 	align-self: stretch;
 	display: flex;
@@ -183,15 +181,6 @@ article img {
 .article-right .text-side > * {
 	transform: skewX(21deg);
 	margin-left: 22px;
-}
-
-.article-left:hover img::after,
-.article-right:hover img::after,
-.article-left:hover .overlay,
-.article-right:hover .overlay,
-.article-left:hover .text-side,
-.article-right:hover .text-side {
-	opacity: 1;
 }
 
 .article-right {
