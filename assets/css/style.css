@@ -29,7 +29,7 @@ header h1 {
 	font-size: 2.2em;
 	margin: 0;
 }
-
+/* nav toggle settings */
 nav {
 	text-align: right;
 }
@@ -56,6 +56,73 @@ nav ul li a:hover {
 	color: #d60db6;
 	text-decoration: underline;
 }
+a,
+.popup-button {
+	display: inline-block;
+	margin-top: 15px;
+	color: #00a2cbfc;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: end;
+	margin-right: 50px;
+}
+a:hover,
+.popup-button:hover {
+	text-decoration: underline;
+	color: #cb00bafc;
+}
+/* Hide the checkbox */
+.nav-toggle {
+	display: none;
+}
+
+/* Style the label to look like a burger menu icon */
+.nav-toggle-label {
+	display: none; /* Initially hidden */
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	cursor: pointer;
+	z-index: 1001;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: #00a3cc;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+	content: "";
+	position: absolute;
+	left: 0;
+}
+
+.nav-toggle-label span::before {
+	top: -8px;
+}
+
+.nav-toggle-label span::after {
+	top: 8px;
+}
+h3 {
+	color: #00a2cbfc;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
 /* intro image and text for each page */
 .hero {
 	background: url("assets/images/assistance.webp") no-repeat center center/cover;
@@ -275,91 +342,10 @@ img.link-icon {
 .icon-ref {
 	font-size: xx-small;
 }
-/* responsive design for different screen sizes */
-@media screen and (max-width: 768px) {
-	.article-left,
-	.article-right {
-		flex-direction: column;
-	}
-	.article-left .image-side,
-	.article-right .image-side,
-	.article-left .text-side,
-	.article-right .text-side {
-		width: 100%;
-		margin-left: 0;
-	}
-	.article-right {
-		flex-direction: column-reverse;
-	}
-}
-
-a,
-.popup-button {
-	display: inline-block;
-	margin-top: 15px;
-	color: #00a2cbfc;
-	text-decoration: none;
-	font-weight: bold;
-	text-align: end;
-	margin-right: 50px;
-}
-
-a:hover,
-.popup-button:hover {
-	text-decoration: underline;
-	color: #cb00bafc;
-}
-h3 {
-	color: #00a2cbfc;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-footer {
-	background-color: #333;
-	color: white;
-	text-align: center;
-	padding: 20px 0;
-}
-
-.nav-toggle {
-	display: none;
-}
-.nav-toggle-label {
-	display: none;
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	cursor: pointer;
-	z-index: 1001;
-}
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-	display: block;
-	width: 25px;
-	height: 3px;
-	background: #00a3cc;
-	transition: all 0.3s ease-in-out;
-	margin-top: 10px;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-	content: "";
-	position: absolute;
-	left: 0;
-}
-
-.nav-toggle-label span::before {
-	top: -8px;
-}
-.nav-toggle-label span::after {
-	top: 8px;
-}
 #workwall-link {
 	margin: 0;
 }
+/* responsive design for different screen sizes */
 @media screen and (max-width: 1400px) {
 	.article-left .overlay,
 	.article-right .overlay {
@@ -376,7 +362,6 @@ footer {
 		transform: skewX(-20deg);
 		padding: 10px;
 		margin: 0;
-
 		text-align: center;
 		align-items: center;
 		align-self: center;
@@ -386,32 +371,33 @@ footer {
 		padding: 8px;
 	}
 }
+
 @media screen and (max-width: 1200px) {
-	.nav-toggle-label {
-		display: block;
-	}
 	header h1 {
 		font-size: 1.5em;
 	}
-
-	.nav-toggle-label:hover + nav ul,
-	nav ul:hover {
-		display: block;
+	.nav-toggle-label {
+		display: block; /* Show the burger menu icon */
 	}
 
+	/* Hide the dropdown menu by default */
 	nav ul {
 		display: none;
 		position: absolute;
-		right: 0;
-		top: 50px;
 		background-color: rgba(255, 255, 255, 0.9);
 		width: 100%;
+		top: 48px; /* Adjust based on your navbar height */
+		right: 0;
 		text-align: center;
-		padding-top: 10px;
+	}
+
+	/* Display the dropdown menu when the checkbox is checked */
+	.nav-toggle:checked ~ nav ul {
+		display: block;
 	}
 
 	nav ul li {
-		display: block;
+		display: block; /* Stack the links vertically */
 		margin: 10px 0;
 	}
 	a {
@@ -430,47 +416,31 @@ footer {
 		opacity: 1;
 	}
 }
+
 @media screen and (max-width: 1024px) {
 	.article-left .overlay,
 	.article-right .overlay {
 		height: 91%;
 	}
 }
+
 @media screen and (max-width: 768px) {
-	.nav-toggle-label {
-		display: block;
-	}
 	header h1 {
 		font-size: 1.5em;
-	}
-
-	.nav-toggle-label:hover + nav ul,
-	nav ul:hover {
-		display: block;
-	}
-
-	nav ul {
-		display: none;
-		position: absolute;
-		right: 0;
-		top: 50px;
-		background-color: rgba(255, 255, 255, 0.9);
-		width: 100%;
-		text-align: center;
-		padding-top: 10px;
-	}
-
-	nav ul li {
-		display: block;
-		margin: 10px 0;
-	}
-	a {
-		margin: 0;
-		padding: 0;
 	}
 	.article-left,
 	.article-right {
 		flex-direction: column;
+	}
+	.article-left .image-side,
+	.article-right .image-side,
+	.article-left .text-side,
+	.article-right .text-side {
+		width: 100%;
+		margin-left: 0;
+	}
+	.article-right {
+		flex-direction: column-reverse;
 	}
 	.article-left img,
 	.article-right img {
@@ -488,15 +458,11 @@ footer {
 		font-size: xx-large;
 		padding: 5px;
 	}
-
 	.article-left .text-side,
 	.article-right .text-side {
 		transform: translateY(20px);
 		transform: skewX(0deg);
 		margin-left: 0;
-	}
-	.article-right {
-		flex-direction: column-reverse;
 	}
 	.article-left .text-side > *,
 	.article-right .text-side > * {
@@ -522,10 +488,10 @@ footer {
 	img.link-icon {
 		width: 14px;
 	}
-	@media screen and (max-width: 468px) {
-		.article-left .overlay,
-		.article-right .overlay {
-			height: 91%;
-		}
+}
+@media screen and (max-width: 468px) {
+	.article-left .overlay,
+	.article-right .overlay {
+		height: 91%;
 	}
 }
