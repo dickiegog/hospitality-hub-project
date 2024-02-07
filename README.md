@@ -71,7 +71,7 @@ The Owner's Page is designed for business owners in the hospitality industry. Th
 
 ### Managers Page
 
-![Managers Page](assets/images/maangers-screen.png)
+![Managers Page](assets/images/managers-screen.png)
 The Manager's Page is focused around how they can better manage their team and provides links to help them organise them and make them stronger.
 
 ### Staff Page
