@@ -61,7 +61,7 @@ Below are the key features with their descriptions and screenshots:
 
 ### home
 
-![Home Page](assets/images/Home-Screen.png)
+![Home Page](assets/images/home-screen.png)
 The Home Page serves as the welcoming gateway to the Hospitality Help Hub. It offers a user-friendly interface to navigate to various pages of the application. This page helps the user to navigate to the page most relevant to them and also provides links to join the wider community of others in the industry that are struggling.
 
 ### Owner Page
