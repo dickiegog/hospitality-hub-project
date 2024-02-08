@@ -123,7 +123,7 @@ footer {
 	padding: 20px 0;
 }
 
-/* intro image and text for each page */
+/* top section with page intro & image*/
 .hero {
 	background: url("assets/images/assistance.webp") no-repeat center center/cover;
 	height: 210px;
@@ -348,6 +348,7 @@ img.link-icon {
 }
 /* responsive design for different screen sizes */
 @media screen and (max-width: 1400px) {
+	/* sections with text and images */
 	.article-left .overlay,
 	.article-right .overlay {
 		font-size: 1em;
@@ -387,7 +388,7 @@ img.link-icon {
 		position: absolute;
 		background-color: rgba(255, 255, 255, 0.9);
 		width: 100%;
-		top: 48px; /* Adjust based on your navbar height */
+		top: 48px;
 		right: 0;
 		text-align: center;
 	}
@@ -398,13 +399,14 @@ img.link-icon {
 	}
 
 	nav ul li {
-		display: block; /* Stack the links vertically */
+		display: block;
 		margin: 10px 0;
 	}
 	a {
 		margin: 0;
 		padding: 0;
 	}
+	/* top section with page intro */
 	.hero {
 		margin-top: 50px;
 		padding-top: 10px;
@@ -429,6 +431,19 @@ img.link-icon {
 	header h1 {
 		font-size: 1.5em;
 	}
+
+	/* top section with page intro */
+	.hero {
+		margin-top: 50px;
+		padding-top: 10px;
+		height: 150px;
+		font-size: small;
+	}
+	.hero h2 {
+		font-size: xx-large;
+		padding: 5px;
+	}
+	/* sections with text and images */
 	.article-left,
 	.article-right {
 		flex-direction: column;
@@ -449,16 +464,6 @@ img.link-icon {
 		width: 100%;
 		height: auto;
 	}
-	.hero {
-		margin-top: 50px;
-		padding-top: 10px;
-		height: 150px;
-		font-size: small;
-	}
-	.hero h2 {
-		font-size: xx-large;
-		padding: 5px;
-	}
 	.article-left .text-side,
 	.article-right .text-side {
 		transform: translateY(20px);
@@ -478,11 +483,9 @@ img.link-icon {
 		font-size: 1.3em;
 		height: 95%;
 		opacity: 1;
-	}
-	.article-left .overlay p,
-	.article-right .overlay p {
 		padding: 8px;
 	}
+
 	.popup-button {
 		margin-right: 0;
 	}
