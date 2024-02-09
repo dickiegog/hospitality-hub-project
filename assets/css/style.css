@@ -125,7 +125,7 @@ footer {
 
 /* top section with page intro & image*/
 .hero {
-	background: url("assets/images/assistance.webp") no-repeat center center/cover;
+	background: url("./assets/images/assistance.webp") no-repeat center center/cover;
 	height: 210px;
 	color: white;
 	padding: 82px 0;
