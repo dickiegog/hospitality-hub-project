@@ -343,6 +343,9 @@ img.link-icon {
 	font-size: xx-small;
 	color: #d9f7fd;
 }
+#icons-link {
+	color: #d0ebff;
+}
 #workwall-link {
 	margin: 0;
 }
