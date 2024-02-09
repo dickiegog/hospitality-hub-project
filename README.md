@@ -93,10 +93,6 @@ The Manager's Page is focused around how they can better manage their team and p
 The Staff Page is an interactive platform for hospitality employees. It provides a few words of encouragement and some useful links for a struggling emploee. We want staff members to knwo where they can turn.
 ![Staff Page](assets/images/staff-screen.png)
 
-## Testing
-
--
-
 ## Acknowledgemet
 
 - generated from Code-Institute-Org/ci-full-template
@@ -136,7 +132,15 @@ Files are named descriptively, using lowercase and underscores to ensure cross-p
 
 - `assets/css/style.css`: CSS file.
 - `assets/images/`: Image files.
-- '.devcontainer/': build assets & docker files,
+- '.devcontainer/': build assets & docker files
+
+## Testing
+
+- The site have been tested on primary broswers like Chrome, Firefox and Safari
+- We have tested responsive design on standard devices in dev tools
+- Popups and exteranl links to open in a new tab have been tested on all primary browsers
+- HTML has been tested in W3C validator and CSS W3 Jigsaw, without any major errors
+- Ran Lighthouse testing with
 
 ## License
 
