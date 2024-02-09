@@ -17,7 +17,7 @@
 ## Introduction
 
 Welcome to the Hospitality Help Hub, a web-based application designed to provide a supportive platform all members of the hospitality can use to help them when they need some help and encouragement. We want provide a supportive environment where they can connect with others and varioius resources designed to provide that support when they need it. We offer responsive design so we can help those hospitality workers on all devices.
-![Introduction](../assets/images/responsive-design.png)
+![Introduction](assets/images/responsive-design.png)
 https://dickiegog.github.io/hospitality-hub-project/
 https://github.com/dickiegog/hospitality-hub-project
 
@@ -65,33 +65,33 @@ To deploy the Hospitality Help Hub, follow these steps:
 The site uses a responsive navigation bar made up of four pages these are the Home page, Owner Page, Manager's Page, and Staff Page.
 
 A user can access the other pages on the site and see what page they are currently on by looking at the menu in the navigation bar. When the user is on a page it will show that in bold text.
-![Nav Bar](../assets/images/desktop-nav.png)
+![Nav Bar](assets/images/desktop-nav.png)
 
 The menu will be changed to use the hamburger icon for small devices. I followed the steps from the Love Running project.
 Navigation bar (small devices)
-![Nav Bar](../assets/images/mobile-nav.png)
+![Nav Bar](assets/images/mobile-nav.png)
 
 Below are the key features with their descriptions and screenshots:
 
 ### Home Page
 
 The Home Page serves as the welcoming gateway to the Hospitality Help Hub. It offers a user-friendly interface to navigate to various pages of the application. This page helps the user to navigate to the page most relevant to them and also provides links to join the wider community of others in the industry that are struggling.
-![Home Page](../assets/images/home-screen.png)
+![Home Page](assets/images/home-screen.png)
 
 ### Owner Page
 
 The Owner's Page is designed for business owners in the hospitality industry. This page focuses on providing high-level insights into business operations, enabling owners to make informed decisions. This page provides a few easy links to resources to see best & latest practices for running theor business.
-![Owners Page](../assets/images/owners-screen.png)
+![Owners Page](assets/images/owners-screen.png)
 
 ### Managers Page
 
 The Manager's Page is focused around how they can better manage their team and provides links to help them organise them and make them stronger.
-![Managers Page](../assets/images/managers-screen.png)
+![Managers Page](assets/images/managers-screen.png)
 
 ### Staff Page
 
 The Staff Page is an interactive platform for hospitality employees. It provides a few words of encouragement and some useful links for a struggling emploee. We want staff members to knwo where they can turn.
-![Staff Page](../assets/images/staff-screen.png)
+![Staff Page](assets/images/staff-screen.png)
 
 ## Testing
 
@@ -134,9 +134,9 @@ Files are named descriptively, using lowercase and underscores to ensure cross-p
 
 ## Directory Structure
 
-- `../assets/css/style.css`: CSS file.
-- `../assets/images/`: Image files.
-- '.devcontainer/': build ../assets & docker files,
+- `assets/css/style.css`: CSS file.
+- `assets/images/`: Image files.
+- '.devcontainer/': build assets & docker files,
 
 ## License
 
