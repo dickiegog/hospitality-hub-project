@@ -11,8 +11,9 @@
 7. [Coding Standards](#coding-standards)
 8. [File Naming Conventions](#file-naming-conventions)
 9. [Directory Structure](#directory-structure)
-10. [License](#license)
-11. [Contact](#contact)
+10. [Testing](#testing)
+11. [License](#license)
+12. [Contact](#contact)
 
 ## Introduction
 
@@ -140,7 +141,8 @@ Files are named descriptively, using lowercase and underscores to ensure cross-p
 - We have tested responsive design on standard devices in dev tools
 - Popups and exteranl links to open in a new tab have been tested on all primary browsers
 - HTML has been tested in W3C validator and CSS W3 Jigsaw, without any major errors
-- Ran Lighthouse testing with
+- Lighthouse testing optimised to 100% across all fields
+  ![Testing](assets/images/lighthouse-test.png)
 
 ## License
 
